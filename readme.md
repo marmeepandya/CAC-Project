@@ -27,9 +27,10 @@ How are different ethnic and social groups framed in German news multiparagraphs
 
 ```
 CAC/
-├── dataset/
-│   ├── all_multi_paragraphs_2022_2026.csv         # Raw German dataset
-│   └── all_multi_paragraphs_2022_2026_translated.csv  # Translated dataset (EN)
+├── dataset/                                        # ← not tracked in git, generate locally
+│   ├── all_multi_paragraphs_2022_2026.RDS          # Raw German dataset (source file)
+│   ├── all_multi_paragraphs_2022_2026.csv          # Converted CSV (generated from RDS)
+│   └── all_multi_paragraphs_2022_2026_translated.csv  # Translated dataset (EN, generated)
 ├── test.ipynb                                      # API testing & framing annotation notebook
 ├── translate_run.py                                # Translation script (German → English)
 ├── run_translation.sh                              # sbatch job script for bwUniCluster
@@ -37,6 +38,28 @@ CAC/
 ├── .gitignore
 └── README.md
 ```
+
+---
+
+## Getting Started
+
+### Step 0: Convert RDS to CSV
+
+The raw dataset is provided as an `.RDS` file. Before running anything else, convert it to CSV using R:
+
+```r
+# In R or RStudio
+df <- readRDS("dataset/all_multi_paragraphs_2022_2026.RDS")
+write.csv(df, "dataset/all_multi_paragraphs_2022_2026.csv", row.names = FALSE)
+```
+
+Or from the R command line on the cluster:
+
+```bash
+Rscript -e 'df <- readRDS("dataset/all_multi_paragraphs_2022_2026.RDS"); write.csv(df, "dataset/all_multi_paragraphs_2022_2026.csv", row.names = FALSE)'
+```
+
+This generates `all_multi_paragraphs_2022_2026.csv` (~660k rows) which is required by the translation and annotation scripts.
 
 ---
 
