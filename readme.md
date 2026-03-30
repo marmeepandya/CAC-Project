@@ -2,14 +2,13 @@
 ## Framing Analysis of Ethnic and Racial Bias in German News Media
 
 **Course:** Exercise: Computational Analysis of Communication (FSS 2026)  
-**Instructor:** Dr. Rainer Freudenthaler, University of Mannheim  
 **Focus:** Framing dimension of ethnic and racial bias in news coverage
 
 ---
 
 ## Project Overview
 
-This project is part of a seminar exercise at the University of Mannheim that operationalizes ethnic and racial bias in German news communication using computational methods. Each research group focuses on one dimension of bias; this group focuses on **framing** — specifically how different ethnic and social groups are portrayed in news multiparagraphs.
+This project is part of a seminar Project at the University of Mannheim that operationalizes ethnic and racial bias in German news communication using computational methods. Each research group focuses on one dimension of bias; this group focuses on **framing** — specifically how different ethnic and social groups are portrayed in news multiparagraphs.
 
 The dataset consists of German newspaper articles from 2022, spanning national media (e.g. FAZ, Süddeutsche Zeitung), regional outlets, and alternative media (left- and right-wing). Group identities in the data are masked as `[Gruppe 1]` and `[andere Gruppe]` for anonymization purposes.
 
@@ -19,7 +18,6 @@ The theoretical foundation comes from Freudenthaler, Ludwig & Müller (under rev
 
 ## Research Question
 
-How are different ethnic and social groups framed in German news multiparagraphs, and does framing differ systematically across media outlets and group identities?
 
 ---
 
