@@ -172,23 +172,3 @@ wc -l ~/CAC/dataset/all_multi_paragraphs_2022_2026_translated.csv
 squeue -u ma_mpandya
 tail -f ~/CAC/translation_<jobid>.out
 ```
-
----
-
-## References
-
-- Freudenthaler, R., Ludwig, K., Müller, P. (under review). *Fragmented Racism in Public Discourse*
-- Neuendorf, K. A. (2016). *The Content Analysis Guidebook* (2nd ed.). Sage Publications
-- Weber, M., & Reichardt, M. (2023). Evaluation is all you need. *arXiv:2401.00284*
-- Lin et al. (2025). ollamar: An R package for running large language models. *JOSS, 10*(105)
-- Van Atteveldt, W., Trilling, D., & Calderón, C. A. (2022). *Computational Analysis of Communication*. Wiley Blackwell
-- bacchuss R package: https://github.com/Rainer-Freudenthaler/bacchuss
-
----
-
-## Notes
-
-- Group names in the dataset are anonymized as `[Gruppe 1]` and `[andere Gruppe]` — these are preserved as-is in translations and annotations
-- The dataset contains ~660,000 multiparagraphs; translation is done in batches with automatic resume on interruption
-- Report due: January 19 — submit to rfreuden@mail.uni-mannheim.de (CC: rainer@freudenthaler-schwaigern.de)
-- Format: 10–12 pages, APA 7th edition, clearly indicate who wrote which section
