@@ -1,0 +1,2 @@
+n_eval,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,cohens_kappa,human_percent_agreement,n_human_coded_by_two_or_more,n_human_agreed,n_human_disagreed
+87,0.6436781609195402,0.8087912087912087,0.6083333333333334,0.638961038961039,0.621485793899587,0.3294380905022377,0.7131147540983607,122,87,35
