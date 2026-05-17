@@ -1,0 +1,4 @@
+condition,n,accuracy,macro_f1,weighted_f1,kappa,alpha
+A: Zero-shot baseline (Step 3),250,0.644,0.492,0.635,0.304,0.304
+B: Few-shot,250,0.668,0.509,0.659,0.38,0.366
+C: Few-shot + CoT,250,0.66,0.502,0.654,0.351,0.349
