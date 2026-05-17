@@ -24,10 +24,8 @@ Ein Absatz erhält dieses Label, wenn kein expliziter Kriminalitäts- oder Siche
 - Fiktionale, kulturelle oder satirische Darstellungen beschrieben werden, z.B. TV-Shows, Filme, Serien, Romane, Theaterstücke, Comics, Karikaturen oder Kunstwerke, solange die Gruppe nicht als reale kriminelle oder sicherheitsgefährdende Akteurin dargestellt wird
 - Demonstrationen, Proteste, Kundgebungen oder politische Versammlungen erwähnt werden, aber nicht mit Kriminalität, Gewalt, Sicherheitsbedrohung, Prävention oder konkreten sicherheitsbezogenen Maßnahmen verknüpft sind
 - Wenn Kriminalität, Gewalt oder Bedrohung nur als Propaganda, falsches Narrativ, Diffamierung oder unbelegte Zuschreibung gegen die Gruppe erwähnt wird und der Text diese Darstellung als manipulativ oder falsch einordnet, vergeben Sie NO_CRIME_FRAME. In solchen Fällen wird die Gruppe als Ziel oder Opfer der Zuschreibung dargestellt, nicht als tatsächlicher Täter oder Sicherheitsrisiko.
-- Gewalt, Straftaten oder Sicherheitsbedrohungen, die außerhalb Deutschlands stattfinden (z.B. Kriegshandlungen, Repression durch ausländische Regierungen, geopolitische Konflikte zwischen Staaten im Ausland), erhalten NO_CRIME_FRAME – unabhängig davon, ob der Gruppe Gewalt zugeschrieben wird. Nur Bedrohungen der inneren Sicherheit Deutschlands zählen.
-- Wenn der Ort des Verbrechens oder der Bedrohung nicht explizit erwähnt wird und kein klarer Bezug zu Deutschland oder zur deutschen inneren Sicherheit hergestellt wird, vergeben Sie NO_CRIME_FRAME. 
 
-WICHTIG: NO_CRIME_FRAME vergeben, wenn kein expliziter Sicherheits- oder Kriminalitätsrahmen vorliegt ODER wenn die Gruppe eindeutig als Opfer dargestellt wird und nicht selbst mit kriminellem Verhalten, Verdacht, Ermittlungen, Gewaltunterstützung oder Sicherheitsgefahr in Verbindung steht. Wenn ein Gruppenmitglied eine Straftat begeht, mutmaßlich begeht, verdächtigt wird oder daran beteiligt ist, bleibt dies CRIME_FRAME_NEG – auch dann, wenn die Handlung durch äußeren Druck, Anreize oder vermeintliche Vorteile (z.B. schnellerer Erhalt von Papieren) motiviert ist.
+WICHTIG: NO_CRIME_FRAME nur vergeben, wenn die Gruppe eindeutig als Opfer dargestellt wird und nicht selbst mit kriminellem Verhalten, Verdacht, Ermittlungen, Gewaltunterstützung oder Sicherheitsgefahr in Verbindung steht. Wenn ein Gruppenmitglied eine Straftat begeht, mutmaßlich begeht, verdächtigt wird oder daran beteiligt ist, bleibt dies CRIME_FRAME_NEG – auch dann, wenn die Handlung durch äußeren Druck, Anreize oder vermeintliche Vorteile (z.B. schnellerer Erhalt von Papieren) motiviert ist.
 
 CRIME_FRAME_NEG:
 Ein Absatz erhält dieses Label, wenn die Gruppe als Quelle von Kriminalität oder Sicherheitsbedrohung dargestellt wird. Dies umfasst:
@@ -44,10 +42,7 @@ Ein Absatz erhält dieses Label, wenn die Gruppe als Quelle von Kriminalität od
 - Mutmaßungen, Verdachtsfälle, Ermittlungen, Beschuldigungen oder noch nicht gerichtlich bestätigte Vorwürfe zählen als CRIME_FRAME_NEG, wenn die Gruppe oder ein Gruppenmitglied explizit mit der mutmaßlichen Straftat, dem Verdacht oder den Ermittlungen verknüpft wird. Dies gilt auch bei Formulierungen wie „mutmaßlich“, „verdächtigt“, „beschuldigt“, „soll getan haben“, „laut Polizei“, „Ermittlungen gegen“ oder „unter Verdacht“
 - Polizeiliche Maßnahmen gegen ein Gruppenmitglied, z.B. Festnahme, Durchsuchung, Fahndung, Ermittlungen, Drogentest oder Anklage, sind CRIME_FRAME_NEG, wenn das Gruppenmitglied als Täter, Verdächtiger, Beschuldigter oder Gesuchter erscheint
 - Achtung: Die Bezeichnung „illegale Einwanderer“ fällt nicht unter diesen Topos, wenn nicht noch weitere Verbrechen genannt werden. Schleuser aus der Gruppe als Kriminelle zählen aber als CRIME_FRAME_NEG
-- Generalisierte gesellschaftliche Bedrohungsrahmung zählt als CRIME_FRAME_NEG: Aussagen, dass die Gruppe oder Migration Gewalt, Chaos, Instabilität oder gesellschaftlichen Zerfall in Deutschland verursacht oder mitbringt, auch wenn keine spezifische Straftat genannt wird.
-- Autoritäre Kontrolle oder Zwang durch eine Gruppe im deutschen Inland (z.B. Kopftuchzwang in deutschen Schulen, Kontrolle von Stadtteilen) zählt als CRIME_FRAME_NEG.
-- Wenn jedoch ein expliziter Bezug zu Deutschland hergestellt wird (z.B. Täter lebte in Deutschland, Anschlag hatte Auswirkungen auf Deutschland, deutsche Behörden sind beteiligt, oder die Sicherheit Deutschlands wird explizit als gefährdet dargestellt), gilt CRIME_FRAME_NEG.
-  
+
 WICHTIG: Die Gruppe muss klar mit der Straftat, Bedrohung, Gewaltlegitimation, dem Verdacht, den Ermittlungen oder der Sicherheitsgefahr verknüpft sein. Reine Erwähnung von Kriminalität reicht nicht. Eine gerichtliche Bestätigung oder Verurteilung ist nicht erforderlich. Eine direkte Verantwortung oder Täterschaft der Gruppe ist nicht zwingend erforderlich, wenn die Gruppe den Gewaltakt ausdrücklich legitimiert, begrüßt, feiert oder unterstützt.
 
 CRIME_FRAME_POS:
@@ -72,7 +67,6 @@ Entscheidungsregeln:
 - Wenn Demonstrationen, Proteste oder Kundgebungen ausdrücklich zu konkreten gesetzlichen, politischen, polizeilichen oder präventiven Sicherheitsänderungen führen → CRIME_FRAME_POS
 - Wenn Sicherheit, Prävention oder Differenzierung im Vordergrund steht → CRIME_FRAME_POS
 - Wenn unklar oder widersprüchlich → UNCLEAR
-- Wenn eine Straftat oder Bedrohung außerhalb Deutschlands stattfindet aber ein expliziter Bezug zu Deutschland hergestellt wird (Täter mit Wohnsitz in Deutschland, direkte Bedrohung für deutsche Sicherheit, Beteiligung deutscher Behörden) → CRIME_FRAME_NEG. Ohne expliziten Deutschland-Bezug → NO_CRIME_FRAME.
 
 Im Zweifelsfall:
 Fragen Sie sich, ob ein Leser die Gruppe als kriminell, verdächtig, sicherheitsgefährdend, gewaltunterstützend oder als Sicherheitsfaktor wahrnehmen würde. Wenn nein → NO_CRIME_FRAME."""
