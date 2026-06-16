@@ -1,0 +1,2 @@
+model,n_total_human_completed,n_eval,n_excluded,n_agree,n_disagree,agreement_rate,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,cohens_kappa
+ministral-3-14b,250,250,0,201,49,0.804,0.804,0.47843137254901963,0.5899843505477308,0.4921946340827064,0.8310330912727747,0.4984236170822586
