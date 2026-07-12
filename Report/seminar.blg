@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: seminar.aux
+The style file: chicagoa.bst
+Database file #1: references.bib
+Warning--no journal in freudenthaler2025
+Warning--no number and no volume in freudenthaler2025
+Warning--page numbers missing in freudenthaler2025
+Warning--no number and no volume in guo2023
+Warning--page numbers missing in guo2023
+Warning--no number and no volume in jumle2025
+Warning--page numbers missing in jumle2025
+Warning--no number and no volume in kathirgamalingam2025
+Warning--no journal in weberreichardt2023
+Warning--no number and no volume in weberreichardt2023
+Warning--page numbers missing in weberreichardt2023
+You've used 28 entries,
+            2905 wiz_defined-function locations,
+            772 strings with 9919 characters,
+and the built_in function-call counts, 18596 in all, are:
+= -- 1483
+> -- 1423
+< -- 1
++ -- 428
+- -- 478
+* -- 1674
+:= -- 3457
+add.period$ -- 86
+call.type$ -- 28
+change.case$ -- 198
+chr.to.int$ -- 28
+cite$ -- 39
+duplicate$ -- 490
+empty$ -- 1123
+format.name$ -- 550
+if$ -- 3389
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 33
+newline$ -- 169
+num.names$ -- 280
+pop$ -- 155
+preamble$ -- 1
+purify$ -- 373
+quote$ -- 0
+skip$ -- 514
+stack$ -- 0
+substring$ -- 885
+swap$ -- 150
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 490
+warning$ -- 11
+while$ -- 260
+width$ -- 0
+write$ -- 398
+(There were 11 warnings)
