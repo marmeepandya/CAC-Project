@@ -1,4 +1,8 @@
 dataset/all_multi_paragraphs_2022_2026.csv
 dataset/all_multi_paragraphs_2022_2026.RDS
 .env
-github-commands.txt
+github-commands.txtresults/annotation_100k.csv
+.agents/
+.claude/
+skills-lock.json
+__pycache__/

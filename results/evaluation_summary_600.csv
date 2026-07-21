@@ -1,0 +1,2 @@
+model,evaluation_labels,n_total_human_completed,n_eval,n_excluded,n_agree,n_disagree,agreement_rate,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,crime_frame_neg_precision,crime_frame_neg_recall,crime_frame_neg_f1,cohens_kappa
+ministral-3-14b,NO_CRIME_FRAME|CRIME_FRAME_NEG,596,596,0,575,21,0.964765100671141,0.964765100671141,0.8244523386619301,0.8339982269503546,0.8291447682752031,0.9650205061935438,0.6666666666666666,0.6875,0.676923076923077,0.6582942011575843
