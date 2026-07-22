@@ -87,7 +87,6 @@ Entscheidungsregeln:
 - Wenn Demonstrationen, Proteste oder Kundgebungen nur als politische Meinungsäußerung beschrieben werden → NO_CRIME_FRAME
 - Wenn Demonstrationen, Proteste oder Kundgebungen ausdrücklich zu konkreten gesetzlichen, politischen, polizeilichen oder präventiven Sicherheitsänderungen führen → CRIME_FRAME_POS
 - Wenn Sicherheit, Prävention oder Differenzierung im Vordergrund steht → CRIME_FRAME_POS
-- Wenn unklar oder widersprüchlich → UNCLEAR
 
 Im Zweifelsfall:
 Fragen Sie sich, ob ein Leser [Gruppe 1] als kriminell, verdächtig, sicherheitsgefährdend, gewaltunterstützend oder als Sicherheitsfaktor für Deutschland wahrnehmen würde. Erwähnungen anderer Gruppen dürfen diese Entscheidung nicht beeinflussen. Berücksichtigen Sie auch Fälle, in denen Täter oder Opfer aus Deutschland kommen oder die deutsche Staatsangehörigkeit besitzen. Berücksichtigen Sie außerdem Entscheidungen, Maßnahmen oder Bedrohungen auf Ebene der EU oder NATO, wenn Deutschland als Mitglied davon betroffen ist. Wenn kein erkennbarer Deutschland-, EU- oder NATO-Bezug vorliegt → NO_CRIME_FRAME. Wenn nein → NO_CRIME_FRAME."""
