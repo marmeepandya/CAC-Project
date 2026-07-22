@@ -2,7 +2,7 @@
 ## Framing Analysis of Ethnic and Racial Bias in German News Media
 
 **Course:** Exercise: Computational Analysis of Communication (FSS 2026)  
-**Focus:** Framing dimension of ethnic and racial bias in news coverage
+**Focus:** Benefit and Threat Framing Dimension in German News 
 
 ---
 
@@ -17,48 +17,47 @@ The theoretical foundation comes from Freudenthaler, Ludwig & Müller (under rev
 ---
 
 ## Research Question
-
-
+Can large language models, guided by iteratively refined natural-language annotation instructions, reliably and validly identify group-related crime framing in German news coverage, and how does their performance compare with that of human annotators?
 ---
 
 ## Repository Structure
 
-```
 CAC/
-├── dataset/                                        # ← not tracked in git, generate locally
-│   ├── all_multi_paragraphs_2022_2026.RDS          # Raw German dataset (source file)
-│   ├── all_multi_paragraphs_2022_2026.csv          # Converted CSV (generated from RDS)
-│   └── all_multi_paragraphs_2022_2026_translated.csv  # Translated dataset (EN, generated)
-├── test.ipynb                                      # API testing & framing annotation notebook
-├── translate_run.py                                # Translation script (German → English)
-├── run_translation.sh                              # sbatch job script for bwUniCluster
-├── .env                                            # API key (not tracked in git)
-├── .gitignore
-└── README.md
-```
-
----
-
-## Getting Started
-
-### Step 0: Convert RDS to CSV
-
-The raw dataset is provided as an `.RDS` file. Before running anything else, convert it to CSV using R:
-
-```r
-# In R or RStudio
-df <- readRDS("dataset/all_multi_paragraphs_2022_2026.RDS")
-write.csv(df, "dataset/all_multi_paragraphs_2022_2026.csv", row.names = FALSE)
-```
-
-Or from the R command line on the cluster:
-
-```bash
-Rscript -e 'df <- readRDS("dataset/all_multi_paragraphs_2022_2026.RDS"); write.csv(df, "dataset/all_multi_paragraphs_2022_2026.csv", row.names = FALSE)'
-```
-
-This generates `all_multi_paragraphs_2022_2026.csv` (~660k rows) which is required by the translation and annotation scripts.
-
+├── dataset/                                      # Local datasets, generally not tracked in Git
+│   ├── all_multi_paragraphs_2022_2026.RDS        # Raw German source dataset
+│   ├── all_multi_paragraphs_2022_2026.csv        # Dataset converted from RDS to CSV
+│   └── all_multi_paragraphs_2022_2026_translated.csv
+│                                                  # English-translated dataset
+│
+├── Reads/                                        # Reference material and project literature
+├── Report/                                       # Project reports and written documentation
+├── results/                                      # Generated annotation and analysis outputs
+│
+├── annotation_setup.py                           # Annotation environment and data setup
+│
+├── framing_annotation_step2.ipynb                # Framing annotation step 2
+├── framing_annotation_step2.1.ipynb              # Revised framing annotation step 2
+├── framing_annotation_step_3.ipynb               # Framing annotation step 3
+├── framing_annotation_step4.ipynb                # Framing annotation step 4
+├── framing_reannotation.ipynb                    # Reannotation workflow
+├── framing_step2_validation.ipynb                 # Validation of step 2 annotations
+├── framing_step3_4_confidence.ipynb               # Confidence analysis for steps 3 and 4
+├── framing_step3_4_two_llm.ipynb                  # Two-LLM workflow for steps 3 and 4
+├── framing_step4_new250.ipynb                     # Step 4 workflow for 250 new observations
+├── framing_step4_new250_updated.ipynb             # Updated workflow for 250 new observations
+├── framing_step4_updated.ipynb                    # Updated framing annotation step 4
+│
+├── rescore_pydi.py                                # Rescoring script
+├── translate_run.py                              # German-to-English translation script
+├── translate.ipynb                               # Interactive translation workflow
+├── run_translation.sh                            # Cluster job script for translation
+├── test.ipynb                                    # API and workflow testing
+│
+├── requirements.txt                              # Python dependencies
+├── .env                                          # API credentials, not tracked in Git
+├── .gitattributes                                # Git attribute configuration
+├── .gitignore                                    # Files excluded from Git
+└── readme.md                                     # Project documentation
 ---
 
 ## Dataset
