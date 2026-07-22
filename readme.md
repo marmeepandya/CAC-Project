@@ -17,11 +17,13 @@ The theoretical foundation comes from Freudenthaler, Ludwig & Müller (under rev
 ---
 
 ## Research Question
+```text
 Can large language models, guided by iteratively refined natural-language annotation instructions, reliably and validly identify group-related crime framing in German news coverage, and how does their performance compare with that of human annotators?
+```
 ---
 
 ## Repository Structure
-
+```text
 CAC/
 ├── dataset/                                      # Local datasets, generally not tracked in Git
 │   ├── all_multi_paragraphs_2022_2026.RDS        # Raw German source dataset
@@ -58,6 +60,7 @@ CAC/
 ├── .gitattributes                                # Git attribute configuration
 ├── .gitignore                                    # Files excluded from Git
 └── readme.md                                     # Project documentation
+```
 ---
 
 ## Dataset
